@@ -48,6 +48,8 @@ def get_table_def(cursor):
 
 
 def create_hyper(conn, sql_query, file_name, table_name):
+    print(f"Creating {file_name} using {sql_query}")
+
     with HyperProcess(Telemetry.SEND_USAGE_DATA_TO_TABLEAU) as hyper:
         print("Hyper Started")
 
@@ -70,7 +72,7 @@ def create_hyper(conn, sql_query, file_name, table_name):
             with Inserter(connection, table) as inserter:
                 while rows:
                     i += len(rows)
-                    print(str((i)))
+                    print(f"Reading {str((i))} "rows.")
                     if not rows:
                         break
                     else:
