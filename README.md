@@ -2,7 +2,7 @@
 
 Code from DataDev Day 2023
 
-This sample code repository will provide effective way to 
+This sample code repository will provide effective way to use PyODBC package to create Tableau Hyper file with Tableau Hyper API
 
 ### Python Package Requirement
 * pyodbc
