@@ -1,9 +1,8 @@
 import pyodbc
-import decimal, datetime
 from tableauhyperapi import *
 import _util as util
 
-server = 'localhost'
+server = 'dbserver'
 database = 'tcph'
 username = 'datadev'
 password = 'tableau'
@@ -11,7 +10,7 @@ password = 'tableau'
 conn_str = f'DRIVER=ODBC Driver 17 for SQL Server;SERVER={server};DATABASE={database};UID={username};PWD={password}'
 conn = pyodbc.connect(conn_str)
 
-file_path = 'D:\\TEMP\\'
+file_path = 'D:\\HYPER\\'
 
 
 with HyperProcess(Telemetry.SEND_USAGE_DATA_TO_TABLEAU) as hyper:

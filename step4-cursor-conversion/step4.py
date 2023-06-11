@@ -3,7 +3,7 @@ import decimal
 import pyodbc
 from tableauhyperapi import *
 
-server = 'localhost'
+server = 'dbserver'
 database = 'tcph'
 username = 'datadev'
 password = 'tableau'

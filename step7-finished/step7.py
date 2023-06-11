@@ -1,6 +1,6 @@
 import _util as util
 
-file_path = 'D:\\TEMP\\'
+file_path = 'D:\\HYPER\\'
 
 util.create_hyper(util.conn, 'select * from nation', file_path + "nation.hyper", "nation")
 util.create_hyper(util.conn, 'select * from region', file_path + "region.hyper", "region")

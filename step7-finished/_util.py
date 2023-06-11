@@ -2,7 +2,7 @@ import pyodbc
 import datetime, decimal
 from tableauhyperapi import *
 
-server = 'localhost'
+server = 'dbserver'
 database = 'tcph'
 username = 'datadev'
 password = 'tableau'

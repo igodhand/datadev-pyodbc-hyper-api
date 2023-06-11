@@ -1,6 +1,6 @@
 import pyodbc
 
-server = 'localhost'
+server = 'dbserver'
 database = 'tcph'
 username = 'datadev'
 password = 'tableau'
