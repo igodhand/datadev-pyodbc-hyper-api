@@ -1,0 +1,23 @@
+Hyper Table Definition
+========================================================
+TableDefinition.Column('o_orderkey', SqlType.int()),
+TableDefinition.Column('o_custkey', SqlType.big_int()),
+TableDefinition.Column('o_orderstatus', SqlType.varchar(50)),
+TableDefinition.Column('o_totalprice', SqlType.numeric(15, 2)),
+TableDefinition.Column('o_orderdate', SqlType.date()),
+TableDefinition.Column('o_orderpriority', SqlType.varchar(50)),
+TableDefinition.Column('o_clerk', SqlType.varchar(50)),
+TableDefinition.Column('o_shippriority', SqlType.int()),
+TableDefinition.Column('o_comment', SqlType.varchar(400)),
+
+Cursor Description
+========================================================
+('o_orderkey', <class 'int'>, None, 10, 10, 0, False)
+('o_custkey', <class 'int'>, None, 19, 19, 0, False)
+('o_orderstatus', <class 'str'>, None, 50, 50, 0, False)
+('o_totalprice', <class 'decimal.Decimal'>, None, 15, 15, 2, False)
+('o_orderdate', <class 'datetime.date'>, None, 10, 10, 0, False)
+('o_orderpriority', <class 'str'>, None, 50, 50, 0, False)
+('o_clerk', <class 'str'>, None, 50, 50, 0, False)
+('o_shippriority', <class 'int'>, None, 10, 10, 0, False)
+('o_comment', <class 'str'>, None, 400, 400, 0, False)
