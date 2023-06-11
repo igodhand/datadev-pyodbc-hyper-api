@@ -51,7 +51,7 @@ with HyperProcess(Telemetry.SEND_USAGE_DATA_TO_TABLEAU) as hyper:
         with Inserter(connection, table) as inserter:
             while rows:
                 i += len(rows)
-                print(f"Reading {str((i))} "rows.")
+                print(f"Reading {str((i))} rows.")
                 if not rows:
                     break
                 else:
