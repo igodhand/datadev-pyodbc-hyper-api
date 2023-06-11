@@ -40,3 +40,7 @@ for d in cursor.description:
 
 for t in list_def:
     print(t)
+
+
+
+
